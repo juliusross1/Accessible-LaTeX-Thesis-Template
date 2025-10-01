@@ -19,7 +19,7 @@ Some tips
 
 
 ## How to use pdflatex to produce an pdf file
-This should work as normal
+This command should work as normal from the command line
 ```
 pdflatex thesis.tex
 ```
