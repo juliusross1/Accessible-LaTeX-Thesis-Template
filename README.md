@@ -47,9 +47,9 @@ The title page works with both the pdf and the epub.  LaTeXml reports that "Fron
 
 ### Equations
 
-## Bibliography
+### Bibliography
 
-## Code
+### Code
 
 ## Things that do not work (or could work better) with LaTeXml
 
