@@ -49,7 +49,9 @@ The title page works with both the pdf and the epub.  LaTeXml reports that "Fron
 
 ## Bibliography
 
-## Things that do not work or could work better with LaTeXml
+## Code
+
+## Things that do not work (or could work better) with LaTeXml
 
 ### Author field in epub
 ### Including pdf images
