@@ -19,13 +19,13 @@ Some tips
 
 
 ## How to use pdflatex to produce an pdf file
-This command should work as normal from the command line
+This command should work as normal from the command line (or you can use your usual LaTeX editor)
 ```
 pdflatex thesis.tex
 ```
 
 ## How to use latexml to produce an epub file
-Here are [Instructions on installing LaTeXMml](https://math.nist.gov/~BMiller/LaTeXML/get.html).  To run it on this document from the command line run
+Here are [Instructions on installing LaTeXMml](https://math.nist.gov/~BMiller/LaTeXML/get.html).  To run it on this document from the command line 
 ```
 latexmlc -dest=epub thesis.tex
 ```
@@ -33,7 +33,8 @@ This should produce the file `thesis.epub`.
 
 Testing has happened with TeXLive 2025 and LaTeXml 0.8.8 all on MacOS.   The epub was working well with [EPub Viewer Pro](https://apps.apple.com/us/app/epub-viewer-pro/id1572239625).  It should work on other systems.
 
-
+## Overleaf
+You certainly can edit this file on overleaf, but I do not know how to run LaTeXml directly on files stored on overleaf.  Instead you will need to download your project from overleaf to run LaTeXml.
 
 ## Things that work well with LaTeXml
 
