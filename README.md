@@ -72,6 +72,8 @@ You can include JPG, JPEG or PNG images.   Including SVG or PDF does not work.  
 
 ### Equations
 
+LaTeXml will use MathMl for the equations.  As far as I know there is nothing else that is needed to make these equations accessible.   That said, it is recommended to use standard ams macros rather than define complicated macros yourself as these can create issue with LaTeXml.
+
 ### Bibliography
 
 ### Code
@@ -79,8 +81,11 @@ You can include JPG, JPEG or PNG images.   Including SVG or PDF does not work.  
 ## Things that do not work (or could work better) with LaTeXml
 
 ### Author field in epub
-### Including pdf images
+
 ### \usepackage{babel}
+
+
+
 ### TikZ and xypic
 It is not possible at the moment to have alternative text when using tikz or xypic directly.  Instead authors should create a standalone document with that figure and run the following commands
 ```
