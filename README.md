@@ -1,5 +1,5 @@
 # Accessible-LaTeX-Thesis-Template
-A LaTeX thesis template based on amsbook class aimed at assisting authors in writing documents that can be converted to to accessible epub files.
+A LaTeX thesis template based on amsbook class aimed at assisting authors in writing documents that can be converted to to accessible epub files.   It has been tested with [LaTeXML](https://math.nist.gov/~BMiller/LaTeXML/).
 
 ## Read this carefully
 
@@ -101,9 +101,9 @@ Available at: \href{https://arxiv.org/abs/1309.0049}{Arxiv: 1309.0049}
 ```
 
 
-Note that LaTeXml does support BiBTeX with some caveats, see the [https://math.nist.gov/~BMiller/LaTeXML/manual/commands/latexml.html](LaTeXml usage webpage) for details.
+Note that LaTeXml does support BiBTeX with some caveats, see the [(LaTeXml usage webpage](https://math.nist.gov/~BMiller/LaTeXML/manual/commands/latexml.html) for details.
 
-BibLaTeX support is being worked on [https://github.com/brucemiller/LaTeXML/issues/373]
+BibLaTeX support is being worked on [https://github.com/brucemiller/LaTeXML/issues/373](LaTeXML/issues/373)
 
 ### Code
 
