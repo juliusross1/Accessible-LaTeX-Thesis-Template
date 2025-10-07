@@ -7,7 +7,7 @@ This template comes with no offer of support or warranty.  It is merely to be us
 
 Writing documents that are accessible requires authors to know about accessibility, and write with accessibility in mind.   For an introduction to this see the article [Accessibility for the Working Mathematician](https://arxiv.org/abs/2505.22667).
 
-This LaTeX has been written as a bare-bones example of something that can be made to work with LaTeXML to produce accessible epub files.   But it is not foolproof, and if authors do exciting and/or unexpected things with LaTeX then it is likely that the result will not be accessible and/or LaTeXML will not work.
+This LaTeX template has been written as a bare-bones example of something that can be made to work with LaTeXML to produce accessible epub files.   But it is not foolproof, and if authors do exciting and/or unexpected things with LaTeX then it is likely that the result will not be accessible and/or LaTeXML will not work.
 
 Some tips
 
@@ -121,7 +121,7 @@ The following package and sample work with LaTeXML.   The output looks to me to 
 ```
 \usepackage{listings} 
 
-\begin{lstlisting}[basicstyle = \ttfamily\small,resetmargins=true,tabsize=5,extendedchars=false]
+\begin{lstlisting}[basicstyle = \singlespacing\ttfamily\small,resetmargins=true,tabsize=5,extendedchars=false]
 def factorial(n):
     """Compute the factorial of n recursively."""
     if n == 0:
