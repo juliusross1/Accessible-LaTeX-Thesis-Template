@@ -36,7 +36,7 @@ Testing has happened with TeXLive 2025 and LaTeXml 0.8.8 all on MacOS.   The epu
 ## Overleaf
 You certainly can edit this file on overleaf, but I do not know how to run LaTeXML directly on files stored on overleaf.  Instead you will need to download your project from overleaf to run LaTeXML.
 
-## Things that work well with LaTeXml
+## Things that work well with LaTeXML
 
 ### Title page
 
