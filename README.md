@@ -36,7 +36,11 @@ This should produce the file `thesis.epub`.
 Testing has happened with TeXLive 2025 and LaTeXml 0.8.8 all on MacOS.   The epub was working well with [EPub Viewer Pro](https://apps.apple.com/us/app/epub-viewer-pro/id1572239625).  It should work on other systems.
 
 ## Overleaf
-You certainly can edit this file on overleaf, but I do not know how to run LaTeXML directly on files stored on overleaf.  The simplest way would be to download your project from overleaf and run LaTeXML.  A more advanced way would be to use the [Overleaf GitHub integration](https://docs.overleaf.com/integrations-and-add-ons/git-integration-and-github-synchronization) and run LaTeXML locally.
+You certainly can edit your latex files on overleaf, but I do not know how to run LaTeXML directly on files stored on overleaf.  The simplest way would be to download your project from overleaf and run LaTeXML.  A more advanced way would be to use the [Overleaf GitHub integration](https://docs.overleaf.com/integrations-and-add-ons/git-integration-and-github-synchronization) and run LaTeXML locally.
+
+## Testing Epub files for accessibility
+
+No tool will be perfect it telling you if your document is fully accessible, but there are good tools that will indicate problems.  For instance you can try [Ace by Daisy](https://daisy.org/activities/software/ace/) which will check various standards.  If you are in the US note that current regulations for state institutions ask for WCAG compliance, but you may well want to do more than this.
 
 ## Things that work well with LaTeXML
 
