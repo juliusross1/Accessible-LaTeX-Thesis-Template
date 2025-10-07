@@ -1,5 +1,5 @@
 # Accessible-LaTeX-Thesis-Template
-A LaTeX thesis template based on amsbook class aimed at assisting authors in writing documents that can be converted to to accessible epub files.   It has been tested with [LaTeXML](https://math.nist.gov/~BMiller/LaTeXML/).
+A LaTeX thesis template based on amsbook class aimed at assisting authors in writing documents that can be converted to to accessible epub files.   It has been tested with [LaTeXML](https://math.nist.gov/~BMiller/LaTeXML/).  October 2025.
 
 ## Read this carefully
 
@@ -128,10 +128,10 @@ print(f"5! = {factorial(5)}")
 
 ### Author field in epub
 
-The author field is not included in the epub metadata [https://github.com/brucemiller/LaTeXML/issues/1947].  This does not seem to matter for WCAG compliance, but I had one epub reader complain about this.
+The author field is not included in the epub metadata (LaTeXML/issues/1947)[https://github.com/brucemiller/LaTeXML/issues/1947].  This does not seem to matter for WCAG compliance, but I had one epub reader complain about this.
 
 ### TikZ and xypic
-It is not possible to have alternative text with LaTeXml when using tikz or xypic directly [https://github.com/brucemiller/LaTeXML/issues/2165].  Instead authors should create a standalone document.  For instance this document could be
+It is not possible to have alternative text with LaTeXml when using tikz or xypic directly (LaTeXML/issues/2165)[https://github.com/brucemiller/LaTeXML/issues/2165].  Instead authors should create a standalone document.  For instance this document could be
 
 ```
 \documentclass{standalone}
