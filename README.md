@@ -62,7 +62,7 @@ The link to the University of Illinois Chicago is \href{https://www.uic.edu}{her
 
 ### Images
 
-You can include JPG, JPEG or PNG images.   Including SVG or PDF does not allow for alternative text.  See below about TikZ/xypic.
+You can include JPG, JPEG or PNG images.   At present, including SVG or PDF does not allow for alternative text so would not be accessible.  See below about TikZ/xypic.
 
 ```
 \begin{figure}\label{fig1}
