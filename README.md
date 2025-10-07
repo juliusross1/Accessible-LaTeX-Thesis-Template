@@ -99,9 +99,7 @@ print(f"5! = {factorial(5)}")
 
 ### Author field in epub
 
-### \usepackage{babel}
-
-
+The author field is not included in the epub metadata [https://github.com/brucemiller/LaTeXML/issues/1947].  This does not seem to matter for WCAG compliance, but I had one epub reader complain about this.
 
 ### TikZ and xypic
 It is not possible at the moment to have alternative text when using tikz or xypic directly.  Instead authors should create a standalone document with that figure and run the following commands
