@@ -24,6 +24,8 @@ This command should work as normal from the command line (or you can use your us
 pdflatex thesis.tex
 ```
 
+As usual, you may need to run pdflatex twice to update the tableofcontents or listoffigures.
+
 ## How to use latexml to produce an epub file
 Here are [Instructions on installing LaTeXMml](https://math.nist.gov/~BMiller/LaTeXML/get.html).  To run it try the following from the command line 
 ```
