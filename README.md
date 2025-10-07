@@ -73,7 +73,7 @@ You can include JPG, JPEG or PNG images.   Including SVG or PDF does not work.  
 
 ### Equations
 
-LaTeXml will insert MathML into the epub file for the equations.  As far as I know there is nothing else that is needed to make these equations accessible.   That said, it is recommended to use standard ams macros rather than define complicated macros yourself as these can create issue with LaTeXml.
+LaTeXml will insert MathML into the epub file for the equations.  As far as I know there is nothing else that is needed to make these equations accessible.   That said, I imagine it is possible to write equations in some non-standard way that will cause LaTeXml to not work as expected.    It is recommended to use standard LaTeX/AMS macros rather than define complicated macros yourself as these can create issue with LaTeXml.
 
 ### Bibliography
 
