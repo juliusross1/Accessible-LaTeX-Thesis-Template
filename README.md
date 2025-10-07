@@ -13,7 +13,7 @@ Some tips
 
 - Regularly run both pdflatex and latexmlc (see below) on your document as you write it, especially if you change anything in the preamble.    Do not assume that just because pdflatex is working that the latexmlc also works.
 
-- Take care in using different style files or adding new packages to your document.  Some will work, others may not, and even if they do work they may disrupt accessibility.
+- Take care in using different style files or adding new packages to your document.  Some will work, others may not, and even if they do work they may disrupt accessibility.  The LaTeXml documentation includes a list of [https://math.nist.gov/~BMiller/LaTeXML/manual/included.bindings/](implemented styles and packages).
 
 - Take care in just copy/pasting other people's LaTeX code.  Such code may not have been written to work with LaTeXml, or may not have been written in an accessible way.
 
@@ -62,7 +62,7 @@ The link to the University of Illinois Chicago is \href{https://www.uic.edu}{her
 
 ### Images
 
-You can include JPG, JPEG or PNG images.   Including SVG or PDF does not work.  See below about TikZ/xypic.
+You can include JPG, JPEG or PNG images.   Including SVG or PDF does not allow for alternative text.  See below about TikZ/xypic.
 
 ```
 \begin{figure}\label{fig1}
@@ -76,6 +76,34 @@ You can include JPG, JPEG or PNG images.   Including SVG or PDF does not work.  
 LaTeXml will insert MathML into the epub file for the equations.  As far as I know there is nothing else that is needed to make these equations accessible.   That said, I imagine it is possible to write equations in some non-standard way that will cause LaTeXml to not work as expected.    It is recommended to use standard LaTeX/AMS macros rather than define complicated macros yourself as these can create issue with LaTeXml.
 
 ### Bibliography
+
+The following works
+
+```
+
+\begin{thebibliography}{9}
+
+
+\bibitem{Hartshorne}
+R.~Hartshorne, \emph{Algebraic Geometry}, Springer-Verlag, New York, 1977.
+
+\bibitem{Mumford}
+D.~Mumford, \emph{Abelian Varieties}, Oxford University Press, 1970.
+
+\bibitem{DraismaEtAl}
+J.~Draisma, E.~Horobet, G.~Ottaviani, B.~Sturmfels, and R.~R.~Thomas, 
+``The Euclidean distance degree of an algebraic variety,'' 
+\emph{arXiv:1309.0049} (2013).  
+Available at: \href{https://arxiv.org/abs/1309.0049}{Arxiv: 1309.0049}
+
+\end{thebibliography}
+
+```
+
+
+
+
+BibLaTeX support is being worked on [https://github.com/brucemiller/LaTeXML/issues/373]
 
 ### Code
 
@@ -103,7 +131,7 @@ print(f"5! = {factorial(5)}")
 The author field is not included in the epub metadata [https://github.com/brucemiller/LaTeXML/issues/1947].  This does not seem to matter for WCAG compliance, but I had one epub reader complain about this.
 
 ### TikZ and xypic
-It is not possible to have alternative text when using tikz or xypic directly.  Instead authors should create a standalone document.  For instance this could be
+It is not possible to have alternative text with LaTeXml when using tikz or xypic directly [https://github.com/brucemiller/LaTeXML/issues/2165].  Instead authors should create a standalone document.  For instance this document could be
 
 ```
 \documentclass{standalone}
@@ -123,7 +151,7 @@ It is not possible to have alternative text when using tikz or xypic directly.  
 \end{document}
 ```
 
-The run the following commands
+Then run the following commands
 ```
 latex figure.tex
 dvipng figure.dvi -o figure.png
