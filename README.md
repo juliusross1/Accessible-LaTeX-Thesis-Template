@@ -43,7 +43,7 @@ You certainly can edit your latex files on overleaf, but I do not know how to ru
 
 No tool will be perfect it telling you if your document is fully accessible, but there are good tools that will indicate problems.  For instance you can try [Ace by Daisy](https://daisy.org/activities/software/ace/) which will check various standards.  If you are in the US note that new regulations for state institutions require WCAG compliance.
 
-When I ran this on thesis.epub it reported only one WCAG non-compliance issue (LaTeXML/issues/2661)[https://github.com/brucemiller/LaTeXML/issues/2661]
+When I ran this on thesis.epub it reported only one WCAG non-compliance issue [LaTeXML/issues/2661](https://github.com/brucemiller/LaTeXML/issues/2661)
 
 ## Things that work well with LaTeXML
 
