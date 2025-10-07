@@ -101,7 +101,7 @@ Available at: \href{https://arxiv.org/abs/1309.0049}{Arxiv: 1309.0049}
 ```
 
 
-Note that LaTeXml does support BiBTeX with some caveats, see the [(LaTeXml usage webpage](https://math.nist.gov/~BMiller/LaTeXML/manual/commands/latexml.html) for details.
+Note that LaTeXml does support BiBTeX with some caveats, see the [LaTeXml usage webpage](https://math.nist.gov/~BMiller/LaTeXML/manual/commands/latexml.html) for details.
 
 BibLaTeX support is being worked on [https://github.com/brucemiller/LaTeXML/issues/373](LaTeXML/issues/373)
 
