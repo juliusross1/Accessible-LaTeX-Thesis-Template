@@ -1,0 +1,15 @@
+\documentclass{standalone}
+\usepackage[all]{xy}
+
+\begin{document}
+
+% Snake lemma diagram
+\xymatrix{
+ & 0 \ar[d] & 0 \ar[d] & 0 \ar[d] & \\
+0 \ar[r] & A' \ar[r]^{f'} \ar[d]_{a} & B' \ar[r]^{g'} \ar[d]_{b} & C' \ar[r] \ar[d]_{c} & 0 \\
+0 \ar[r] & A \ar[r]^f \ar[d]_{a''} & B \ar[r]^g \ar[d]_{b''} & C \ar[r] \ar[d]_{c''} & 0 \\
+0 \ar[r] & A'' \ar[r]^{f''} \ar[d] & B'' \ar[r]^{g''} \ar[d] & C'' \ar[r] \ar[d] & 0 \\
+ & 0 & 0 & 0 &
+}
+
+\end{document}
