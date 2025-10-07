@@ -10,6 +10,9 @@
 
 %%\usepackage[english]{babel}  %Language needs to be specified for accessibility; currently this is not working well with latexml
 
+\usepackage[T1]{fontenc}
+
+
 % Math
 \usepackage{amsmath, amssymb, amsthm}
 
@@ -38,13 +41,20 @@
 
 % Title metadata.  Make changes here to fit your needs
 \newcommand{\thetitle}{A Sample Thesis in Mathematics}
+
+%Edit the following
+\newcommand{\institution}{University of Illinois Chicago} 
+\newcommand{\degree}{DEGREE}
+\newcommand{\programname}{OFFICIAL PROGRAM NAME}
+\newcommand{\committee}{Name, Chair, Advisor \\ Name \\ Name\\ Name, Outside Members Need Affiliation Here}
+\newcommand{\theauthor}{YOUR NAME AS IT APPEARS ON YOUR EXAM REPORT}
+\newcommand{\priordegrees}{Prior degree\\ Another Prior degree, if Appropriate}
+\newcommand{\graduationyear}{YEAR}
+
+% Leave the following for metadata
+\author{\theauthor}
 \title{\thetitle}
 \date{\today}
-\newcommand{\institution}{University of Illinois Chicago} 
-\newcommand{\degree}{Doctor of Philosophy}
-\newcommand{\advisor}{Prof.~Ada Lovelace}
-\newcommand{\theauthor}{A.~Student}
-\author{\theauthor}
 
 \frontmatter
 
@@ -52,30 +62,36 @@
 % Take care in making substantial changes to this as it needs to still work with latexml
 \begin{titlepage}
     \centering
-    {\Large \institution\par}
+	{\Large {\textbf{\textsc{\thetitle}}}  \par}
     \vspace{2cm}
-    {\Large \thetitle \par}
-    \vspace{2cm}
-    {\Large by\par}
+    {\Large BY\par}
     \vspace{0.5cm}
     {\Large \theauthor\par}
+    \vspace{2cm}
+	{\Large THESIS [PhD candidates may use DISSERTATION here instead]\\
+	\vspace{1cm}
+	Submitted as partial fulfillment of the requirements\\ \vspace{0.2cm}
+	for the degree of {\degree} in {\programname} \\ \vspace{0.2cm}
+	in the Graudate College of the \\  \vspace{0.3cm}
+	University of Illinois Chicago, {\graduationyear}
+	}
+		
+	\raggedright
     \vfill
-    A thesis submitted in partial fulfillment of the requirements \\
-    for the degree of  \degree \\
-    \vspace{0.5cm}
-    Advisor: \advisor \\
-    \vspace{1cm}
-    \makeatletter\@date \makeatother
+    \Large Defense Committee: \\
+    \committee \\
 \end{titlepage}
 
+\setcounter{page}{2} %This is UIC requirement, the title page is (i)
 
-%The following is best practice if distributing both a PDF and accessible Epub file.  
+%The following is best practice if distributing both an inacccessible PDF and accessible Epub file.  
 \chapter*{Accessibility Statement}
 \noindent
-An accessible EPUB version of this document is available at [URL].
+An accessible EPUB version of this document is available at [URL] or can be obtained by contacting [contact details].
 
 
 \chapter*{Dedication}
+
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
 
@@ -96,6 +112,7 @@ Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate veh
 \listoftables
 
 \chapter*{List of Abbreviations}
+
 
 \chapter*{Summary}
 
@@ -226,7 +243,9 @@ Here we present the main contributions of the thesis.
 \section{A computer simulation}
 
 % The following works with LaTeXml.  I consider the result accessible, but it might not be 100% WCAG compliant.
-\begin{lstlisting}[basicstyle = \ttfamily\small,resetmargins=true,tabsize=5,extendedchars=false]
+
+
+\begin{lstlisting}[basicstyle = \singlespacing\ttfamily\small,resetmargins=true,tabsize=5,extendedchars=false]
 def factorial(n):
     """Compute the factorial of n recursively."""
     if n == 0:
