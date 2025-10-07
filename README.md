@@ -17,6 +17,7 @@ Some tips
 
 - Take care in just copy/pasting other people's LaTeX code.  Such code may not have been written to work with LaTeXML, or may not have been written in an accessible way.
 
+- Just because LaTeXML works (possible without warnings) does not automatically mean that your document is accessible and/or WCAG compliant.  Author expertise is key, but see below about automatic testing tools.
 
 ## How to use pdflatex to produce an pdf file
 This command should work as normal from the command line (or you can use your usual LaTeX editor)
@@ -40,7 +41,7 @@ You certainly can edit your latex files on overleaf, but I do not know how to ru
 
 ## Testing Epub files for accessibility
 
-No tool will be perfect it telling you if your document is fully accessible, but there are good tools that will indicate problems.  For instance you can try [Ace by Daisy](https://daisy.org/activities/software/ace/) which will check various standards.  If you are in the US note that current regulations for state institutions ask for WCAG compliance, but you may well want to do more than this.
+No tool will be perfect it telling you if your document is fully accessible, but there are good tools that will indicate problems.  For instance you can try [Ace by Daisy](https://daisy.org/activities/software/ace/) which will check various standards.  If you are in the US note that new regulations for state institutions require WCAG compliance.
 
 ## Things that work well with LaTeXML
 
