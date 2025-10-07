@@ -24,6 +24,11 @@
 % Math
 \usepackage{amsmath, amssymb, amsthm}
 
+% If you are including computer code the following package is useful.  It is similar to the verbatim package
+\usepackage{listings} 
+
+
+
 %Graphics
 \usepackage{graphicx}
 
@@ -46,8 +51,7 @@
 
 \begin{document}
 
-% Title metadata
-
+% Title metadata.  Make changes here to fit your needs
 \newcommand{\thetitle}{A Sample Thesis in Mathematics}
 \title{\thetitle}
 \date{\today}
@@ -60,6 +64,7 @@
 \frontmatter
 
 % Custom title page
+% Take care in making substantial changes to this as it needs to still work with latexml
 \begin{titlepage}
     \centering
     {\Large \institution\par}
@@ -142,8 +147,21 @@ As explained in Serre's book \cite{serre}, representation theory plays a key rol
 \chapter{Main Results}
 Here we present the main contributions of the thesis.
 
-\section{First main result}
-Statement and proof go here.
+\section{A computer simulation}
+
+% The following works with LaTeXml.  I consider the result accessible, but it might not be 100% WCAG compliant.
+\begin{lstlisting}[basicstyle = \ttfamily\small,resetmargins=true,tabsize=5,extendedchars=false]
+def factorial(n):
+    """Compute the factorial of n recursively."""
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print(f"5! = {factorial(5)}")
+\end{lstlisting}
+
+
 
 \section{Second main result}
 Another significant theorem.

@@ -72,11 +72,28 @@ You can include JPG, JPEG or PNG images.   Including SVG or PDF does not work.  
 
 ### Equations
 
-LaTeXml will use MathMl for the equations.  As far as I know there is nothing else that is needed to make these equations accessible.   That said, it is recommended to use standard ams macros rather than define complicated macros yourself as these can create issue with LaTeXml.
+LaTeXml will insert MathMl into the epub file for the equations.  As far as I know there is nothing else that is needed to make these equations accessible.   That said, it is recommended to use standard ams macros rather than define complicated macros yourself as these can create issue with LaTeXml.
 
 ### Bibliography
 
 ### Code
+
+The following package and sample work with LaTeXml.   The output looks to me to be highly accessible (but if somebody is being really fussy I am not sure it is completely WCAG compliant)
+
+```
+\usepackage{listings} 
+
+\begin{lstlisting}[basicstyle = \ttfamily\small,resetmargins=true,tabsize=5,extendedchars=false]
+def factorial(n):
+    """Compute the factorial of n recursively."""
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print(f"5! = {factorial(5)}")
+\end{lstlisting}
+```
 
 ## Things that do not work (or could work better) with LaTeXml
 
