@@ -44,6 +44,18 @@ The title page works with both the pdf and the epub.  LaTeXml reports that "Fron
 
 ### Links
 
+The hyperref package works to give internal an external links.  For instance
+
+```
+\href{https://www.uic.edu}{University of Illinois Chicago}.
+```
+Remember that to be accessible, the link text should give a description of the text and not just the url.  So the following two examples are not accessible
+```
+#Neither of the following two examples are accessible
+The link to the University of Illinois Chicago is \href{https://www.uic.edu}{here}.
+\url{https://www.uic.edu}
+```
+
 ### Images
 
 You can include JPG, JPEG or PNG images.   Including SVG or PDF does not work.  See below about TikZ/xypic.
@@ -51,7 +63,7 @@ You can include JPG, JPEG or PNG images.   Including SVG or PDF does not work.  
 ```
 \begin{figure}\label{fig1}
 \includegraphics[alt="Description of Image that serves the same purpose",scale=0.3]{torus.jpg}
-\caption{This is a torus jpg}
+\caption{This is a torus}
 \end{figure}
 ```
 
