@@ -1,5 +1,5 @@
 # Accessible-LaTeX-Thesis-Template
-A LaTeX thesis template based on amsbook class aimed at assisting authors in writing documents that can be converted to to accessible epub files.   It has been tested with [LaTeXML](https://math.nist.gov/~BMiller/LaTeXML/).  October 2025.
+A LaTeX thesis template based on amsbook class aimed at assisting authors in writing documents that can be converted to to accessible epub files.  Consider this as beta.  It has received minimal testing with [LaTeXML](https://math.nist.gov/~BMiller/LaTeXML/).  October 2025.
 
 ## Read this carefully
 

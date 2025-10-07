@@ -1,6 +1,7 @@
 %Todo
 %Table
 %Colors
+%Check heading structure of tableofcontents and listoffigures etc.
 
 
 
@@ -9,8 +10,6 @@
 
 
 %%\usepackage[english]{babel}  %Language needs to be specified for accessibility; currently this is not working well with latexml
-
-\usepackage[T1]{fontenc}
 
 
 % Math
@@ -48,7 +47,7 @@
 \newcommand{\programname}{OFFICIAL PROGRAM NAME}
 \newcommand{\committee}{Name, Chair, Advisor \\ Name \\ Name\\ Name, Outside Members Need Affiliation Here}
 \newcommand{\theauthor}{YOUR NAME AS IT APPEARS ON YOUR EXAM REPORT}
-\newcommand{\priordegrees}{Prior degree\\ Another Prior degree, if Appropriate}
+\newcommand{\priordegrees}{BS, University of Wisconsin, 2005\\ Another Prior degree, if Appropriate}
 \newcommand{\graduationyear}{YEAR}
 
 % Leave the following for metadata
@@ -62,23 +61,25 @@
 % Take care in making substantial changes to this as it needs to still work with latexml
 \begin{titlepage}
     \centering
-	{\Large {\textbf{\textsc{\thetitle}}}  \par}
+	{\Large {\textbf{\thetitle}}}  \par}
     \vspace{2cm}
-    {\Large BY\par}
+    {BY\par}
     \vspace{0.5cm}
-    {\Large \theauthor\par}
+    {\theauthor}\\
+    {\priordegrees}\\
     \vspace{2cm}
-	{\Large THESIS [PhD candidates may use DISSERTATION here instead]\\
+	THESIS [PhD candidates may use DISSERTATION here instead]\\
 	\vspace{1cm}
 	Submitted as partial fulfillment of the requirements\\ \vspace{0.2cm}
 	for the degree of {\degree} in {\programname} \\ \vspace{0.2cm}
-	in the Graudate College of the \\  \vspace{0.3cm}
-	University of Illinois Chicago, {\graduationyear}
-	}
+	in the Graudate College of the \\  \vspace{0.2cm}
+	University of Illinois Chicago, {\graduationyear}\\
+	\vspace{1cm}
+	Chicago, Illinois
 		
 	\raggedright
     \vfill
-    \Large Defense Committee: \\
+    Defense Committee: \\
     \committee \\
 \end{titlepage}
 
