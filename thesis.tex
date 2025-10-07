@@ -19,7 +19,7 @@
 \documentclass[12pt,reqno]{amsbook}
 
 
-%% \usepackage[english]{babel}  %Language needs to be specified for accessibility; currently this is not working well with latexml
+%%\usepackage[english]{babel}  %Language needs to be specified for accessibility; currently this is not working well with latexml
 
 % Math
 \usepackage{amsmath, amssymb, amsthm}
@@ -92,7 +92,7 @@ This thesis investigates XYZ. We show results about ...
 \mainmatter
 
 \chapter{Introduction}
-This is the introduction chapter. We cite some classic works \cite{einstein,serre}.
+This is the introduction chapter. We cite some classic works \cite{Hartshorne,Mumford}.
 
 \begin{theorem}\label{thm1}
 This is a theorem
@@ -104,9 +104,18 @@ We reference Theorem \ref{thm1}.
 
 % JPG, JPEG, PNG will work.  PNG and SVG do not work.
 \section{Motivation}
+
+
 \begin{figure}\label{fig1}
 \includegraphics[alt="Description of Image that serves the same purpose",scale=0.3]{torus.jpg}
 \caption{This is a torus}
+\end{figure}
+
+
+
+\begin{figure}\label{fig2}
+\includegraphics[alt="Description of Image that serves the same purpose",scale=0.8]{figure.png}
+\caption{The Snake Lemma}
 \end{figure}
 
 %% PDF images do not work
@@ -141,9 +150,6 @@ Every finite subgroup of the multiplicative group of a field is cyclic.
 This is a standard result from algebra.
 \end{proof}
 
-\section{Linear representations}
-As explained in Serre's book \cite{serre}, representation theory plays a key role.
-
 \chapter{Main Results}
 Here we present the main contributions of the thesis.
 
@@ -170,7 +176,22 @@ Another significant theorem.
 \chapter{Technical Lemmas}
 Here we collect some supporting lemmas.
 
-%\backmatter
+\begin{thebibliography}{9}
+
+
+\bibitem{Hartshorne}
+R.~Hartshorne, \emph{Algebraic Geometry}, Springer-Verlag, New York, 1977.
+
+\bibitem{Mumford}
+D.~Mumford, \emph{Abelian Varieties}, Oxford University Press, 1970.
+
+\bibitem{DraismaEtAl}
+J.~Draisma, E.~Horobet, G.~Ottaviani, B.~Sturmfels, and R.~R.~Thomas, 
+``The Euclidean distance degree of an algebraic variety,'' 
+\emph{arXiv:1309.0049} (2013).  
+Available at: \href{https://arxiv.org/abs/1309.0049}{https://arxiv.org/abs/1309.0049}
+
+\end{thebibliography}
 
 
 \end{document}
