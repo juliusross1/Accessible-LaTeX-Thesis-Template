@@ -34,7 +34,7 @@ This should produce the file `thesis.epub`.
 Testing has happened with TeXLive 2025 and LaTeXml 0.8.8 all on MacOS.   The epub was working well with [EPub Viewer Pro](https://apps.apple.com/us/app/epub-viewer-pro/id1572239625).  It should work on other systems.
 
 ## Overleaf
-You certainly can edit this file on overleaf, but I do not know how to run LaTeXml directly on files stored on overleaf.  Instead you will need to download your project from overleaf to run LaTeXml.
+You certainly can edit this file on overleaf, but I do not know how to run LaTeXML directly on files stored on overleaf.  Instead you will need to download your project from overleaf to run LaTeXML.
 
 ## Things that work well with LaTeXml
 
