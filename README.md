@@ -30,7 +30,7 @@ As usual, you may need to run pdflatex twice to update the tableofcontents or li
 ## How to use latexml to produce an epub file
 Here are [Instructions on installing LaTeXMml](https://math.nist.gov/~BMiller/LaTeXML/get.html).  To run it try the following from the command line 
 ```
-latexmlc -dest=epub thesis.tex
+latexmlc -dest=thesis.epub thesis.tex
 ```
 This should produce the file `thesis.epub`.  
 
