@@ -15,7 +15,7 @@ Some tips
 
 - Take care in using different style files or adding new packages to your document.  Some will work, others may not, and even if they do work they may disrupt accessibility.  The LaTeXML documentation includes a list of [implemented styles and packages](https://math.nist.gov/~BMiller/LaTeXML/manual/included.bindings/).
 
-- Take care in just copy/pasting other people's LaTeX code.  Such code may not have been written to work with LaTeXml, or may not have been written in an accessible way.
+- Take care in just copy/pasting other people's LaTeX code.  Such code may not have been written to work with LaTeXML, or may not have been written in an accessible way.
 
 
 ## How to use pdflatex to produce an pdf file
