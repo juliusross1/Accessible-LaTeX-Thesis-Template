@@ -133,7 +133,7 @@ print(f"5! = {factorial(5)}")
 \end{lstlisting}
 ```
 
-## Things that do not work (or could work better) with LaTeXml
+## Things that do not work (or could work better) with LaTeXML
 
 ### Author field in epub
 
