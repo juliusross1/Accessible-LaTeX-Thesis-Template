@@ -109,7 +109,7 @@ BibLaTeX support is being worked on [LaTeXML/issues/373](https://github.com/bruc
 
 ### Code
 
-The following package and sample work with LaTeXml.   The output looks to me to be highly accessible (but if somebody is being really fussy I am not sure it is completely WCAG compliant)
+The following package and sample work with LaTeXML.   The output looks to me to be highly accessible (but if somebody is being really fussy I am not sure it is completely WCAG compliant)
 
 ```
 \usepackage{listings} 
@@ -133,7 +133,7 @@ print(f"5! = {factorial(5)}")
 The author field is not included in the epub metadata [LaTeXML/issues/1947](https://github.com/brucemiller/LaTeXML/issues/1947).  This does not seem to matter for WCAG compliance, but I had one epub reader complain about this.
 
 ### TikZ and xypic
-It is not possible to have alternative text with LaTeXml when using tikz or xypic directly [LaTeXML/issues/2165](https://github.com/brucemiller/LaTeXML/issues/2165).  Instead authors should create a standalone document.  For instance this document could be
+It is not possible to have alternative text with LaTeXML when using tikz or xypic directly [LaTeXML/issues/2165](https://github.com/brucemiller/LaTeXML/issues/2165).  Instead authors should create a standalone document.  For instance this document could be
 
 ```
 \documentclass{standalone}
