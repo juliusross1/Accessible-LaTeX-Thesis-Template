@@ -11,7 +11,7 @@ This LaTeX has been written as a bare-bones example of something that can be mad
 
 Some tips
 
-- Regularly run both pdflatex and latexmlc (see below) on your document as you write it, especially if you change anything in the preamble.    Do not assume that just because pdflatex is working that the latexmlc also works.
+- Regularly run both pdflatex and latexmlc (see below) on your document as you write it, especially if you change anything in the preamble.    Do not assume that just because pdflatex is working that the latexmlc also works as expected.
 
 - Take care in using different style files or adding new packages to your document.  Some will work, others may not, and even if they do work they may disrupt accessibility.  The LaTeXML documentation includes a list of [implemented styles and packages](https://math.nist.gov/~BMiller/LaTeXML/manual/included.bindings/).
 
