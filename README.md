@@ -13,7 +13,7 @@ Some tips
 
 - Regularly run both pdflatex and latexmlc (see below) on your document as you write it, especially if you change anything in the preamble.    Do not assume that just because pdflatex is working that the latexmlc also works.
 
-- Take care in using different style files or adding new packages to your document.  Some will work, others may not, and even if they do work they may disrupt accessibility.  The LaTeXml documentation includes a list of [https://math.nist.gov/~BMiller/LaTeXML/manual/included.bindings/](implemented styles and packages).
+- Take care in using different style files or adding new packages to your document.  Some will work, others may not, and even if they do work they may disrupt accessibility.  The LaTeXml documentation includes a list of (implemented styles and packages)[https://math.nist.gov/~BMiller/LaTeXML/manual/included.bindings/].
 
 - Take care in just copy/pasting other people's LaTeX code.  Such code may not have been written to work with LaTeXml, or may not have been written in an accessible way.
 
