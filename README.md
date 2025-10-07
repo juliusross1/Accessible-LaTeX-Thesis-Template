@@ -25,7 +25,7 @@ pdflatex thesis.tex
 ```
 
 ## How to use latexml to produce an epub file
-Here are [Instructions on installing LaTeXMml](https://math.nist.gov/~BMiller/LaTeXML/get.html).  To run it on this document from the command line 
+Here are [Instructions on installing LaTeXMml](https://math.nist.gov/~BMiller/LaTeXML/get.html).  To run it try the following from the command line 
 ```
 latexmlc -dest=epub thesis.tex
 ```
@@ -73,7 +73,7 @@ You can include JPG, JPEG or PNG images.   Including SVG or PDF does not work.  
 
 ### Equations
 
-LaTeXml will insert MathMl into the epub file for the equations.  As far as I know there is nothing else that is needed to make these equations accessible.   That said, it is recommended to use standard ams macros rather than define complicated macros yourself as these can create issue with LaTeXml.
+LaTeXml will insert MathML into the epub file for the equations.  As far as I know there is nothing else that is needed to make these equations accessible.   That said, it is recommended to use standard ams macros rather than define complicated macros yourself as these can create issue with LaTeXml.
 
 ### Bibliography
 
