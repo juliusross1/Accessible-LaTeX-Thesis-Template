@@ -20,6 +20,9 @@ Some tips
 - Just because LaTeXML works (possible without warnings) does not automatically mean that your document is accessible and/or WCAG compliant.  Author expertise is key, but see below about automatic testing tools.
 
 ## How to use pdflatex to produce an pdf file
+
+Download the thesis.tex and latexml.sty file in your working directory.
+
 This command should work as normal from the command line (or you can use your usual LaTeX editor)
 ```
 pdflatex thesis.tex
