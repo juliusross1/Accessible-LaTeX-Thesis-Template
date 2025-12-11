@@ -23,6 +23,9 @@
 %Graphics
 \usepackage{graphicx}
 
+%LatexML
+\usepackage{latexml}
+
 % Layout
 \usepackage{geometry}
 \geometry{margin=1in}
@@ -85,10 +88,15 @@
 
 \setcounter{page}{2} %This is UIC requirement, the title page is (i)
 
-%The following is best practice if distributing both an inacccessible PDF and accessible Epub file.  
+%The following is best practice if distributing both an inacccessible PDF and accessible Epub file.
 \chapter*{Accessibility Statement}
+\iflatexml
+\noindent
+This document is in an accessible EPUB format. A PDF version of this document is available at [URL] or can be obtained by contacting [contact details].
+\else
 \noindent
 An accessible EPUB version of this document is available at [URL] or can be obtained by contacting [contact details].
+\fi
 
 
 \chapter*{Dedication}
