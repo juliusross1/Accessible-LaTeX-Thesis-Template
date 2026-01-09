@@ -189,7 +189,3 @@ This will create an PNG of the figure that can be included as follows
 \end{figure}
 ```
 
-
-
-## How to use TexML
-Nothing here for now!
