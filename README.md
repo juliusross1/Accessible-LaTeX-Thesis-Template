@@ -42,6 +42,18 @@ Testing has happened with TeXLive 2025 and LaTeXml 0.8.8 all on MacOS.   The epu
 ## Overleaf
 You certainly can edit your latex files on overleaf, but I do not know how to run LaTeXML directly on files stored on overleaf.  The simplest way would be to download your project from overleaf and run LaTeXML.  A more advanced way would be to use the [Overleaf GitHub integration](https://docs.overleaf.com/integrations-and-add-ons/git-integration-and-github-synchronization) and run LaTeXML locally.
 
+## Installing LaTeXML on Windows
+The Windows instructions on the LaTeXML website do not seem to work for everyone.  I was able to install LaTeXML v0.8.8 through [anaconda](https://www.anaconda.com/download) with the following commands
+
+```
+conda create -n latexml
+conda activate latexml
+conda install perl-latexml --channel conda-forge --channel feng1m8
+```
+
+See https://github.com/feng1m8/latexml-conda
+
+
 ## Testing Epub files for accessibility
 
 No tool will be perfect it telling you if your document is fully accessible, but there are good tools that will indicate problems.  For instance you can try [Ace by Daisy](https://daisy.org/activities/software/ace/) which will check various standards.  If you are in the US note that new regulations for state institutions require WCAG compliance.
