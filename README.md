@@ -31,7 +31,7 @@ pdflatex thesis.tex
 As usual, you may need to run pdflatex twice to update the tableofcontents or listoffigures.
 
 ## How to use latexml to produce an epub file
-Here are [Instructions on installing LaTeXMml](https://math.nist.gov/~BMiller/LaTeXML/get.html).  To run it try the following from the command line 
+  To run it try the following from the command line 
 ```
 latexmlc -dest=thesis.epub thesis.tex
 ```
@@ -42,7 +42,10 @@ Testing has happened with TeXLive 2025 and LaTeXml 0.8.8 all on MacOS.   The epu
 ## Overleaf
 You certainly can edit your latex files on overleaf, but I do not know how to run LaTeXML directly on files stored on overleaf.  The simplest way would be to download your project from overleaf and run LaTeXML.  A more advanced way would be to use the [Overleaf GitHub integration](https://docs.overleaf.com/integrations-and-add-ons/git-integration-and-github-synchronization) and run LaTeXML locally.
 
-## Installing LaTeXML on Windows
+## Installing LaTeXML
+
+Here are [Instructions on installing LaTeXMml](https://math.nist.gov/~BMiller/LaTeXML/get.html).
+
 The Windows instructions on the LaTeXML website do not seem to work for everyone.  I was able to install LaTeXML v0.8.8 through [anaconda](https://www.anaconda.com/download) with the following commands
 
 ```
@@ -53,6 +56,8 @@ conda install perl-latexml --channel conda-forge --channel feng1m8
 
 See https://github.com/feng1m8/latexml-conda
 
+## LaTeXML Warnings
+LaTeXML can produce a lot of warnings.  The ones that say "MathParser failed" will not affect the rendering of the mathematics equations, so that error will not prevent the document produced from being accessible/compliant (see (https://github.com/brucemiller/LaTeXML/issues/2742#issuecomment-3755332817))
 
 ## Testing Epub files for accessibility
 
