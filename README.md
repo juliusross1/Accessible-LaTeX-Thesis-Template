@@ -188,9 +188,22 @@ dvipng figure.dvi -o figure.png
 This will create an PNG of the figure that can be included as follows
 
 ```
+
 \begin{figure}\label{fig2}
 \includegraphics[alt="Description of Figure that serves the same purpose",scale=0.3]{figure.png}
 \caption{This is a figure}
 \end{figure}
 ```
 
+### Internal References (for instance to Theorems)
+When using an internal reference such as
+
+```
+\begin{theorem}\label{besttheoremever}
+...
+\end{theorem}
+...
+This is due to Theorem \ref{besttheoremever}
+```
+
+The link that appears only has the number of the theorem and not the entire "Theorem 1" link.  As such it fails [WCAG 2.4.4](https://www.wcag.com/designers/2-4-4-link-purpose-in-context/) which requires that purpose of each link can be determined from the link text alone.  For internal links I think it is reasonable to say that this has minimal impact on accessibility but others may disagree.    I do not know a good way around it  - the [cleveref](https://ctan.org/pkg/cleveref?lang=en) package would be ideal but at this time this package does not work fully with LaTeXML so it should be used with care (issue 2306)[https://github.com/brucemiller/LaTeXML/issues/2306]
