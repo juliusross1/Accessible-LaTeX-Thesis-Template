@@ -137,7 +137,7 @@ Available at: \href{https://arxiv.org/abs/1309.0049}{Arxiv: 1309.0049}
 ```
 
 
-Note that LaTeXml does support BiBTeX with some caveats, see the [LaTeXml usage webpage](https://math.nist.gov/~BMiller/LaTeXML/manual/commands/latexml.html) for details.
+Note that LaTeXml does support BiBTeX but there are caveats and my recommendation is you do not try this;  see the [LaTeXml usage webpage](https://math.nist.gov/~BMiller/LaTeXML/manual/commands/latexml.html) for details.
 
 BibLaTeX support is being worked on [LaTeXML/issues/373](https://github.com/brucemiller/LaTeXML/issues/373)
 
@@ -161,6 +161,10 @@ print(f"5! = {factorial(5)}")
 ```
 
 ## Things that do not work (or could work better) with LaTeXML
+
+### \mathcal vs \mathscr
+
+There is not support for \mathscr and \mathcal so it is recommended you only use \mathscr [https://github.com/brucemiller/LaTeXML/pull/2244](https://github.com/brucemiller/LaTeXML/pull/2244)
 
 ### Author field in epub
 
