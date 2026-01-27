@@ -19,13 +19,17 @@ Some tips
 
 - Just because LaTeXML works (possible without warnings) does not automatically mean that your document is accessible and/or WCAG compliant.  Author expertise is key, but see below about automatic testing tools.
 
-## How to use pdflatex to produce an pdf file
+## How to produce an pdf file
 
 Download the thesis.tex and latexml.sty file in your working directory.
 
 This command should work as normal from the command line (or you can use your usual LaTeX editor)
 ```
 pdflatex thesis.tex
+```
+or
+```
+lualatex thesis.tex
 ```
 
 As usual, you may need to run pdflatex twice to update the tableofcontents or listoffigures.
@@ -182,17 +186,45 @@ It is not possible to have alternative text with LaTeXML when using tikz or xypi
 
 Then run the following commands
 ```
-latex figure.tex
-dvipng figure.dvi -o figure.png
+latex diagram.tex
+dvipng diagram.dvi -o diagram.png
 ```
-This will create an PNG of the figure that can be included as follows
+
+If that does not work well for you then you can try this
+```
+lualatex diagram.tex
+pdftoppm -png diagram.pdf diagram
+```
+
+This will create an PNG of the figure that can be included in the following way.
+
+```
+\includegraphics[alt="Description of Figure that serves the same purpose",scale=0.3]{diagram.png}
 
 ```
 
+It might be that you want this as a "figure" at which point the software will place the figure in an appropriate place.   I am not sure if placement might be different between the pdf and epub files.
+
+```
 \begin{figure}\label{fig2}
-\includegraphics[alt="Description of Figure that serves the same purpose",scale=0.3]{figure.png}
+\includegraphics[alt="Description of Figure that serves the same purpose",scale=0.3]{diagram.png}
 \caption{This is a figure}
 \end{figure}
+```
+
+### TikZ and xypic mathematical formulae
+
+It is most accessible if you write your equations using usual LaTeX commands.  If you have a complicated or non-standard equation for which you need to use tikz (this is likely not to happen often) you might prefer to include it as follows so that equation numbering works.
+
+```
+\begin{equation}
+\Delta = 2 + \includegraphics[alt="Description of Figure that serves the same purpose",scale=0.3]{mathematicaltikz.png}
+\end{equation}
+```
+or you do this inline
+
+```
+$ X = \includegraphics[alt="Description of Figure that serves the same purpose",scale=0.3]{mathematicaltikz.png}$
 ```
 
 ### Internal References (for instance to Theorems)
@@ -207,3 +239,6 @@ This is due to Theorem \ref{besttheoremever}
 ```
 
 the link that appears only has the number of the theorem and not the entire "Theorem 1" link.  As such it fails [WCAG 2.4.4](https://www.wcag.com/designers/2-4-4-link-purpose-in-context/) which requires that purpose of each link can be determined from the link text alone.  For internal links I think it is reasonable to say that this has minimal impact on accessibility but others may disagree.    I do not know a good way around it  - the [cleveref](https://ctan.org/pkg/cleveref?lang=en) package would be ideal but at this time this package does not work fully with LaTeXML so it should be used with care [issue 2306](https://github.com/brucemiller/LaTeXML/issues/2306)
+
+### Acknowledgements
+Thanks to everybody I have spoken to about this project, not least Michael Gintz who has made many positive contributions.
