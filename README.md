@@ -22,7 +22,9 @@ Some tips
 - Just because LaTeXML works (possible without warnings) does not automatically mean that your document is accessible and/or WCAG compliant.  Author expertise is key, but see below about automatic testing tools.
 
 ## UIC Style Guide
-This template has been run past the UIC graduate college.  They told me that they will accept this thesis even though it does not conform to every detail of the UIC Thesis Style Guide (which I understand is currently being revised)
+This template was designed for those at the University of Illinois Chicago (UIC).  Others who use it may need to make changes to fit their institution's requirements (in particular to the title page).
+
+I have run this past the UIC graduate college and they told me that they will accept this thesis even though it does not conform to every detail of the UIC Thesis Style Guide (which I understand is currently being revised)
 
 ## How to produce an pdf file
 
