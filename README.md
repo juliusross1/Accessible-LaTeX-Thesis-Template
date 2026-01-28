@@ -243,6 +243,8 @@ or you do this inline
 $ X = \includegraphics[alt="Description of image that serves the same purpose",scale=0.3]{mathematicaltikz.png}$
 ```
 
+### Comments on Accessible Figures
+
 AI tools can be good at helping you write alt-text (you can even paste in the entire tikz code and ask it to give you an alt text or paste in the picture).  But do read the output since AI can sometimes give nonsense.  The alt-text is meant to be short, so see the article above for what is expected when long alt texts are needed for complicated images.
 
 I add that even though alt-text for mathematical figures may satisfy compliance, it is likely not very accessible.   I put in here a [plug for PreFigure](https://prefigure.org/) even though I do not see a practical way to use that software with this template.
