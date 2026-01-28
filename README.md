@@ -46,8 +46,11 @@ This should produce the file `thesis.epub`.
 
 Testing has happened with TeXLive 2025 and LaTeXml 0.8.8 all on MacOS.   The epub was working well with [EPub Viewer Pro](https://apps.apple.com/us/app/epub-viewer-pro/id1572239625).  It should work on other systems.
 
-## Overleaf
-You certainly can edit your latex files on overleaf, but I do not know how to run LaTeXML directly on files stored on overleaf.  The simplest way would be to download your project from overleaf and run LaTeXML.  A more advanced way would be to use the [Overleaf GitHub integration](https://docs.overleaf.com/integrations-and-add-ons/git-integration-and-github-synchronization).
+## GitHub and Overleaf Integration
+
+You can certainly use overleaf to edit, but it is not possible to run LaTeXML directly within overleaf.
+
+With a little bit of effort it is possible to run LaTeXML directly within Github so you do not have to install this software on your own machine.   Also if you have a premium overleaf subscription you can connect overleaf to github.  See the [Instructions on GitHub and Overleaf Integration](LaTeXMLonGitHub.md) for details.
 
 ## Installing LaTeXML
 
@@ -248,4 +251,4 @@ This is due to Theorem \ref{besttheoremever}
 the link that appears only has the number of the theorem and not the entire "Theorem 1" link.  As such it fails [WCAG 2.4.4](https://www.wcag.com/designers/2-4-4-link-purpose-in-context/) which requires that purpose of each link can be determined from the link text alone.  For internal links I think it is reasonable to say that this has minimal impact on accessibility but others may disagree.    I do not know a good way around it  - the [cleveref](https://ctan.org/pkg/cleveref?lang=en) package would be ideal but at this time this package does not work fully with LaTeXML so it should be used with care [issue 2306](https://github.com/brucemiller/LaTeXML/issues/2306)
 
 ### Acknowledgements
-Thanks to everybody I have spoken to about this project, not least Michael Gintz who has made many positive contributions.
+Thanks to everybody I have spoken to about this project, not least Michael Gintz who has made many positive contributions.  I also thank Dan MacKinnon from the Overleaf team for creating the GitHub action.
