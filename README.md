@@ -28,7 +28,7 @@ I have run this past the UIC graduate college and they told me that they will ac
 
 ## How to produce an pdf file
 
-Download thesis.tex and latexml.sty and torus.jpg into your working directory.
+Download thesis.tex and latexml.sty and torus.jpg and figure.png into your working directory.
 
 This command should work as normal from the command line (or you can use your usual LaTeX editor)
 ```
