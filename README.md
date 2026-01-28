@@ -52,15 +52,15 @@ Testing has happened with TeXLive 2025 and LaTeXml 0.8.8 on MacOS, Linux and Win
 
 ## GitHub and Overleaf Integration
 
-You can certainly use overleaf to edit your LaTeX files, but it is not possible to run LaTeXML directly within overleaf.
+You can certainly use Overleaf to edit your LaTeX files, but it is not possible to run LaTeXML directly within overleaf.
 
-With a little bit of effort it is possible to run LaTeXML directly within Github so you do not have to install this software on your own machine.   Also if you have a premium overleaf subscription you can connect overleaf to github.  See the [Instructions on GitHub and Overleaf Integration](LaTeXMLonGitHub.md) for details.
+With a little bit of effort it is possible to run LaTeXML directly within Github so you do not have to install this software on your own machine.   Also if you have a premium Overleaf subscription you can connect Overleaf to github.  See the [Instructions on GitHub and Overleaf Integration](LaTeXMLonGitHub.md) for details.
 
 For instance this [repository has the template in html format](https://juliusross1.github.io/Accessible-LaTeX-Thesis-Template/).  For a thesis you probably only want to use this to make sure things are working as you expect, but if you intend to distrubute this html output you might want to improve the look by creating a style.css that suits your needs.
 
 ## Installing LaTeXML
 
-Here are [Instructions on installing LaTeXMml](https://math.nist.gov/~BMiller/LaTeXML/get.html).
+Here are [Instructions on installing LaTeXMl](https://math.nist.gov/~BMiller/LaTeXML/get.html).
 
 The Windows instructions on the LaTeXML website do not seem to work for everyone.  I was able to install LaTeXML v0.8.8 through [anaconda](https://www.anaconda.com/download) with the following commands
 
