@@ -116,6 +116,12 @@ You can include JPG, JPEG or PNG images.   At present, including SVG or PDF does
 \end{figure}
 ```
 
+### Comments on Accessible Images
+
+AI tools can be good at helping you write alt-text (you can even paste in the entire tikz code and ask it to give you an alt text or paste in the picture)  but do read the output since AI can sometimes generate nonsense.  The alt-text is meant to be short, so see the article above for what is expected when long alt texts are needed for complicated images.
+
+I add that even though alt-text for mathematical figures may satisfy compliance, it is likely not very accessible.   I put in here a [plug for PreFigure](https://prefigure.org/) even though I do not see a practical way to use that software with this template.
+
 ### Equations
 
 LaTeXML will insert MathML into the epub file for the equations.  As far as I know there is nothing else that is needed to make these equations accessible.   That said, I imagine it is possible to write equations in some non-standard way that will cause LaTeXML to not work as expected.    It is recommended to use standard LaTeX/AMS macros rather than define complicated macros yourself as these can create issue with LaTeXML.
@@ -242,12 +248,6 @@ or you do this inline
 ```
 $ X = \includegraphics[alt="Description of image that serves the same purpose",scale=0.3]{mathematicaltikz.png}$
 ```
-
-### Comments on Accessible Figures
-
-AI tools can be good at helping you write alt-text (you can even paste in the entire tikz code and ask it to give you an alt text or paste in the picture).  But do read the output since AI can sometimes give nonsense.  The alt-text is meant to be short, so see the article above for what is expected when long alt texts are needed for complicated images.
-
-I add that even though alt-text for mathematical figures may satisfy compliance, it is likely not very accessible.   I put in here a [plug for PreFigure](https://prefigure.org/) even though I do not see a practical way to use that software with this template.
 
 ### Internal References (for instance to Theorems)
 When using an internal reference such as
