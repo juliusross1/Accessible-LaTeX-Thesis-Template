@@ -48,7 +48,7 @@ latexmlc -dest=thesis.epub thesis.tex
 ```
 This should produce the file `thesis.epub`.  
 
-Testing has happened with TeXLive 2025 and LaTeXml 0.8.8 all on MacOS.   The epub was working well with [EPub Viewer Pro](https://apps.apple.com/us/app/epub-viewer-pro/id1572239625).  It should work on other systems.
+Testing has happened with TeXLive 2025 and LaTeXml 0.8.8 on MacOS, Linux and Windows.    The epub was working well with [EPub Viewer Pro](https://apps.apple.com/us/app/epub-viewer-pro/id1572239625) as well as the [EpubPup Chrome Extension](https://chromewebstore.google.com/detail/epubpup-epub-reader/kjfhlbghiagglcldmlfmpkdgmehmhfjc)  It should work with other epub readers.
 
 ## GitHub and Overleaf Integration
 
