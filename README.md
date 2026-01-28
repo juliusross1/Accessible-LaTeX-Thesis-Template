@@ -215,7 +215,7 @@ pdftoppm -png diagram.pdf diagram
 This will create an PNG of the figure that can be included in the following way.
 
 ```
-\includegraphics[alt="Description of Figure that serves the same purpose",scale=0.3]{diagram.png}
+\includegraphics[alt="Description of image that serves the same purpose",scale=0.3]{diagram.png}
 
 ```
 
@@ -223,7 +223,7 @@ It might be that you want this as a "figure" at which point the software will pl
 
 ```
 \begin{figure}\label{fig2}
-\includegraphics[alt="Description of Figure that serves the same purpose",scale=0.3]{diagram.png}
+\includegraphics[alt="Description of image that serves the same purpose",scale=0.3]{diagram.png}
 \caption{This is a figure}
 \end{figure}
 ```
@@ -234,14 +234,18 @@ It is most accessible if you write your equations using usual LaTeX commands.  I
 
 ```
 \begin{equation}
-\Delta = 2 + \includegraphics[alt="Description of Figure that serves the same purpose",scale=0.3]{mathematicaltikz.png}
+\Delta = 2 + \includegraphics[alt="Description of image that serves the same purpose",scale=0.3]{mathematicaltikz.png}
 \end{equation}
 ```
 or you do this inline
 
 ```
-$ X = \includegraphics[alt="Description of Figure that serves the same purpose",scale=0.3]{mathematicaltikz.png}$
+$ X = \includegraphics[alt="Description of image that serves the same purpose",scale=0.3]{mathematicaltikz.png}$
 ```
+
+AI tools can be good at helping you write alt-text (you can even paste in the entire tikz code and ask it to give you an alt text or paste in the picture).  But do read the output since AI can sometimes give nonsense.  The alt-text is meant to be short, so see the article above for what is expected when long alt texts are needed for complicated images.
+
+I add that even though alt-text for mathematical figures may satisfy compliance, it is likely not very accessible.   I put in here a [plug for PreFigure](https://prefigure.org/) even though I do not see a practical way to use that software with this template.
 
 ### Internal References (for instance to Theorems)
 When using an internal reference such as
