@@ -15,7 +15,7 @@ https://github.com/your-username/my-repo.git
 From the command line
 
 ```
-github clone https://github.com/juliusross1/Accessible-LaTeX-Thesis-Template.git
+git clone https://github.com/juliusross1/Accessible-LaTeX-Thesis-Template.git
 cd Accessible-LaTeX-Thesis-Template
 git remote set-url origin https://github.com/your-username/my-repo.git
 git push -u origin main
