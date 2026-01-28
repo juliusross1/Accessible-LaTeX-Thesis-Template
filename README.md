@@ -1,5 +1,5 @@
 # Accessible-LaTeX-Thesis-Template
-A LaTeX thesis template based on amsbook class aimed at assisting authors in writing documents that can be converted to to accessible epub files.  Consider this as beta.  It has been tested with [LaTeXML](https://math.nist.gov/~BMiller/LaTeXML/), and we welcome more testing and feedback (October 2025).
+A LaTeX thesis template based on amsbook class aimed at assisting authors in writing documents that can be converted to to accessible epub files.  Consider this as beta.  It has been tested with [LaTeXML](https://math.nist.gov/~BMiller/LaTeXML/), and we welcome more testing and feedback (Jan 2026).
 
 ## Read this carefully
 
@@ -51,6 +51,8 @@ Testing has happened with TeXLive 2025 and LaTeXml 0.8.8 all on MacOS.   The epu
 You can certainly use overleaf to edit, but it is not possible to run LaTeXML directly within overleaf.
 
 With a little bit of effort it is possible to run LaTeXML directly within Github so you do not have to install this software on your own machine.   Also if you have a premium overleaf subscription you can connect overleaf to github.  See the [Instructions on GitHub and Overleaf Integration](LaTeXMLonGitHub.md) for details.
+
+For instance this [repository has the template in html format](https://juliusross1.github.io/Accessible-LaTeX-Thesis-Template/).  For a thesis you probably only want to use this to make sure things are working as you expect, but if you intend to use this html output you might want to improve the look by changing style.css.
 
 ## Installing LaTeXML
 
