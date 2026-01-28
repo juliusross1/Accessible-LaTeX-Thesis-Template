@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/__w/Accessible-LaTeX-Thesis-Template/Accessible-LaTeX-Thesis-Template"?>
+<!--  %Todo --><!--  %Table --><!--  %Colors --><!--  %Check heading structure of tableofcontents and listoffigures etc. --><?latexml class="amsbook" options="12pt,reqno,oneside"?>
+<!--  %%“usepackage[english]–babel˝  %Language needs to be specified for accessibility; currently this is not working well with latexml --><?latexml package="amsmath, amssymb, amsthm"?>
+<?latexml package="listings"?>
+<?latexml package="setspace"?>
+<?latexml package="graphicx"?>
+<?latexml package="latexml"?>
+<?latexml package="geometry"?>
+<?latexml package="hyperref" options="pdfusetitle"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-book.css" type="text/css"/>
+  <resource src="ltx-listings.css" type="text/css"/>
+  <titlepage>
+    <p><text font="bold" fontsize="144%">A Sample Thesis in Mathematics</text></p>
+    <p>BY</p>
+    <p>YOUR NAME AS IT APPEARS ON YOUR EXAM REPORT<break/>BS, University of Wisconsin, 2005<break/>Another Prior degree, if Appropriate<break/></p>
+    <p>THESIS [PhD candidates may use DISSERTATION here instead]<break/><!--  %**** thesis.tex Line 75 **** --></p>
+    <p>Submitted as partial fulfillment of the requirements<break/></p>
+    <p>for the degree of DEGREE in OFFICIAL PROGRAM NAME <break/></p>
+    <p>in the Graduate College of the <break/></p>
+    <p>University of Illinois Chicago, YEAR<break/></p>
+    <p>Chicago, Illinois</p>
+    <p class="ltx_align_left">Defense Committee: <break/>Name, Chair, Advisor <break/>Name <break/>Name<break/>Name, Outside Members Need Affiliation Here<break/></p>
+  </titlepage>
+  <title>A Sample Thesis in Mathematics</title>
+  <creator role="author">
+    <personname><!--  %Leave the following for metadata -->YOUR NAME AS IT APPEARS ON YOUR EXAM REPORT</personname>
+  </creator>
+  <date name="Date:" role="creation">January 28, 2026</date>
+<!--  %This is UIC requirement, the title page is (i) -->  <chapter xml:id="Chx1">
+    <title>Accessibility Statement</title>
+    <para class="ltx_noindent" xml:id="Chx1.p1">
+      <p>This document is in an accessible EPUB format. A PDF version of this document is available at [URL] or can be obtained by contacting [contact details].</p>
+    </para>
+  </chapter>
+  <chapter xml:id="Chx2">
+    <title>Dedication</title>
+    <para xml:id="Chx2.p1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+    </para>
+  </chapter>
+  <chapter xml:id="Chx3">
+    <title>Acknowledgements</title>
+    <para xml:id="Chx3.p1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </para>
+  </chapter>
+  <chapter xml:id="Chx4">
+    <title>Preface</title>
+    <para xml:id="Chx4.p1">
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </para>
+    <para xml:id="Chx4.p2">
+      <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.</p>
+    </para>
+    <para xml:id="Chx4.p3">
+      <p>Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam.</p>
+    </para>
+    <TOC lists="toc" scope="global" select="ltx:part | ltx:chapter | ltx:section | ltx:subsection | ltx:appendix | ltx:index | ltx:bibliography">
+      <title>Contents</title>
+    </TOC>
+    <TOC lists="lof" scope="global">
+      <title>List of Figures</title>
+    </TOC>
+    <TOC lists="lot" scope="global">
+      <title>List of Tables</title>
+    </TOC>
+  </chapter>
+  <chapter xml:id="Chx5">
+    <title>List of Abbreviations</title>
+  </chapter>
+  <chapter xml:id="Chx6">
+    <title>Summary</title>
+    <para xml:id="Chx6.p1">
+      <p>Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
+    </para>
+    <para xml:id="Chx6.p2">
+      <p>Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat.</p>
+    </para>
+    <para xml:id="Chx6.p3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.</p>
+    </para>
+    <para xml:id="Chx6.p4">
+      <p>Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero.</p>
+    </para>
+    <para xml:id="Chx6.p5">
+      <p>Fusce lacinia quam nisi, euismod ultrices nulla malesuada ut. Curabitur sit amet magna quam. Praesent in libero vel turpis pellentesque egestas sit amet vel nunc.</p>
+    </para>
+    <para xml:id="Chx6.p6">
+      <p>Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.</p>
+    </para>
+    <para xml:id="Chx6.p7">
+      <p>Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis.</p>
+    </para>
+    <para xml:id="Chx6.p8">
+      <p>Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.</p>
+    </para>
+    <para xml:id="Chx6.p9">
+      <p>Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue.</p>
+    </para>
+    <para xml:id="Chx6.p10">
+      <p>Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+    </para>
+    <para xml:id="Chx6.p11">
+      <p>Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
+    </para>
+    <para xml:id="Chx6.p12">
+      <p><!--  %**** thesis.tex Line 150 **** -->Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula.</p>
+    </para>
+    <para xml:id="Chx6.p13">
+      <p>Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas.</p>
+    </para>
+    <para xml:id="Chx6.p14">
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam.</p>
+    </para>
+    <para xml:id="Chx6.p15">
+      <p>Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.</p>
+    </para>
+    <para xml:id="Chx6.p16">
+      <p>Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus.</p>
+    </para>
+    <para xml:id="Chx6.p17">
+      <p>Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo.</p>
+    </para>
+    <para xml:id="Chx6.p18">
+      <p>Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus.</p>
+    </para>
+    <para xml:id="Chx6.p19">
+      <p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </para>
+    <para xml:id="Chx6.p20">
+      <p>Nullam nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum.</p>
+    </para>
+    <para xml:id="Chx6.p21">
+      <p>Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam.</p>
+    </para>
+<!--  %% Text 
+     %**** thesis.tex Line 175 **** 
+     %other options are “onehalfspacing or “singlespacing -->  </chapter>
+  <chapter inlist="toc" xml:id="Ch1">
+    <tags>
+      <tag>Chapter 1</tag>
+      <tag role="autoref">chapter 1</tag>
+      <tag role="refnum">1</tag>
+      <tag role="typerefnum">Chapter 1</tag>
+    </tags>
+    <title><tag close=" ">Chapter 1</tag>Introduction</title>
+    <toctitle><tag close=" ">1</tag>Introduction</toctitle>
+    <para xml:id="Ch1.p1">
+      <p>This is the introduction chapter. We cite some classic works <cite class="ltx_citemacro_cite">[<bibref bibrefs="Hartshorne,Mumford" separator="," yyseparator=","/>]</cite>.</p>
+    </para>
+    <para xml:id="Ch1.p2">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt nisi sed neque volutpat, et imperdiet metus congue. Donec interdum, neque at varius vehicula, elit odio tempus sapien, sed finibus lorem felis nec turpis. Aliquam erat volutpat. Mauris vehicula imperdiet erat, non aliquet magna commodo id.</p>
+    </para>
+    <para xml:id="Ch1.p3">
+      <p>Sed porttitor urna ac ipsum rhoncus, vel dictum risus commodo. Integer ultrices dui sit amet pulvinar tempor. Phasellus nec tellus eu turpis sodales accumsan. Proin ultr</p>
+    </para>
+    <theorem class="ltx_theorem_theorem" inlist="thm theorem:theorem" labels="LABEL:thm1" xml:id="Ch1.Thmtheorem1">
+      <tags>
+        <tag>Theorem 1.1</tag>
+        <tag role="autoref">Theorem 1.1</tag>
+        <tag role="refnum">1.1</tag>
+        <tag role="typerefnum">Theorem 1.1</tag>
+      </tags>
+      <title class="ltx_runin"><tag><text font="bold">Theorem 1.1</text></tag><text font="bold">.</text></title>
+      <para xml:id="Ch1.Thmtheorem1.p1">
+        <p><text font="italic">This is a theorem</text></p>
+      </para>
+    </theorem>
+    <para xml:id="Ch1.p4">
+      <p>We reference Theorem <ref labelref="LABEL:thm1"/>.</p>
+    </para>
+    <para xml:id="Ch1.p5">
+      <p><ref class="ltx_href" href="https://www.uic.edu">University of Illinois Chicago</ref>.</p>
+    </para>
+    <section inlist="toc" xml:id="Ch1.S1">
+      <tags>
+        <tag>1.1</tag>
+        <tag role="autoref">section 1.1</tag>
+        <tag role="refnum">1.1</tag>
+        <tag role="typerefnum">§1.1</tag>
+      </tags>
+      <title><tag close=". ">1.1</tag>Motivation</title>
+      <toctitle><tag close=" ">1.1</tag>Motivation</toctitle>
+      <figure inlist="lof" labels="LABEL:fig1" xml:id="Ch1.F1">
+        <tags>
+          <tag>Figure 1.1</tag>
+          <tag role="autoref">Figure 1.1</tag>
+          <tag role="refnum">1.1</tag>
+          <tag role="typerefnum">Figure 1.1</tag>
+        </tags>
+        <graphics candidates="torus.jpg" description="”Description of Image that serves the same purpose”" graphic="torus.jpg" options="alt=”Description of Image that serves the same purpose”,scale=0.3" xml:id="Ch1.F1.g1"/>
+        <toccaption><tag close=" ">1.1</tag>This is a torus</toccaption>
+        <caption><tag close=". ">Figure 1.1</tag><!--  %**** thesis.tex Line 200 **** -->This is a torus<!--  %**** thesis.tex Line 200 **** --></caption>
+      </figure>
+      <figure inlist="lof" labels="LABEL:fig2" xml:id="Ch1.F2">
+        <tags>
+          <tag>Figure 1.2</tag>
+          <tag role="autoref">Figure 1.2</tag>
+          <tag role="refnum">1.2</tag>
+          <tag role="typerefnum">Figure 1.2</tag>
+        </tags>
+        <graphics candidates="figure.png" description="”Description of Image that serves the same purpose”" graphic="figure.png" options="alt=”Description of Image that serves the same purpose”,scale=0.8" xml:id="Ch1.F2.g1"/>
+        <toccaption><tag close=" ">1.2</tag>The Snake Lemma</toccaption>
+        <caption><tag close=". ">Figure 1.2</tag>The Snake Lemma</caption>
+      </figure>
+<!--  %% PDF images do not work 
+     %“begin–figure˝“label–fig1˝ 
+     %“includegraphics[alt=”Description of Image that serves the same purpose”,scale=0.3]–torus.pdf˝ 
+     %“caption–This is a torus pdf˝ 
+     %“end–figure˝ -->      <subsection inlist="toc" xml:id="Ch1.S1.SS1">
+        <tags>
+          <tag>1.1.1</tag>
+          <tag role="autoref">subsection 1.1.1</tag>
+          <tag role="refnum">1.1.1</tag>
+          <tag role="typerefnum">§1.1.1</tag>
+        </tags>
+        <title><tag close=". ">1.1.1</tag>Historical context</title>
+        <toctitle><tag close=" ">1.1.1</tag>Historical context</toctitle>
+        <para xml:id="Ch1.S1.SS1.p1">
+          <p>A brief overview of how the problem developed.</p>
+          <equation labels="LABEL:eq1" xml:id="Ch1.E1">
+            <tags>
+              <tag>(1.1)</tag>
+              <tag role="autoref">Equation 1.1</tag>
+              <tag role="refnum">1.1</tag>
+            </tags>
+            <Math mode="display" tex="\int_{0}^{1}f(x)dx=2" text="((integral _ 0) ^ 1)@(f * x * differential-d@(x)) = 2" xml:id="Ch1.E1.m1">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                        <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                      </XMApp>
+                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                      <XMDual>
+                        <XMRef idref="Ch1.E1.m1.1"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="false">(</XMTok>
+                          <XMTok font="italic" role="UNKNOWN" xml:id="Ch1.E1.m1.1">x</XMTok>
+                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMApp>
+                        <XMTok font="italic" meaning="differential-d" role="DIFFOP">d</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </equation>
+          <p>How to solve (<ref labelref="LABEL:eq1"/>)</p>
+        </para>
+      </subsection>
+      <subsection inlist="toc" xml:id="Ch1.S1.SS2">
+        <tags>
+          <tag>1.1.2</tag>
+          <tag role="autoref">subsection 1.1.2</tag>
+          <tag role="refnum">1.1.2</tag>
+          <tag role="typerefnum">§1.1.2</tag>
+        </tags>
+        <title><tag close=". ">1.1.2</tag>Open questions</title>
+        <toctitle><tag close=" ">1.1.2</tag>Open questions</toctitle>
+        <para xml:id="Ch1.S1.SS2.p1">
+          <p>Some questions remain open for future work.</p>
+        </para>
+        <para xml:id="Ch1.S1.SS2.p2">
+          <p>Note: I have not tested the accessibility of this table.</p>
+        </para>
+        <table inlist="lot" placement="h" xml:id="Ch1.T1">
+          <tags>
+            <tag>Table 1.1</tag>
+            <tag role="autoref">Table 1.1</tag>
+            <tag role="refnum">1.1</tag>
+            <tag role="typerefnum">Table 1.1</tag>
+          </tags>
+          <tabular class="ltx_centering ltx_guessed_headers" vattach="middle">
+            <thead>
+              <tr>
+                <td align="center" thead="column">Monkeys</td>
+                <td align="center" thead="column">Lions</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center">100</td>
+                <td align="center">200</td>
+              </tr>
+            </tbody>
+          </tabular>
+          <toccaption class="ltx_centering"><tag close=" ">1.1</tag>Example Table</toccaption>
+          <caption class="ltx_centering"><tag close=". ">Table 1.1</tag>Example Table</caption>
+        </table>
+      </subsection>
+    </section>
+  </chapter>
+  <chapter inlist="toc" xml:id="Ch2">
+    <tags>
+      <tag>Chapter 2</tag>
+      <tag role="autoref">chapter 2</tag>
+      <tag role="refnum">2</tag>
+      <tag role="typerefnum">Chapter 2</tag>
+    </tags>
+    <title><tag close=" ">Chapter 2</tag>Background</title>
+    <toctitle><tag close=" ">2</tag>Background</toctitle>
+    <para xml:id="Ch2.p1">
+      <p>This chapter gives necessary background.</p>
+    </para>
+    <section inlist="toc" xml:id="Ch2.S1">
+      <tags>
+        <tag>2.1</tag>
+        <tag role="autoref">section 2.1</tag>
+        <tag role="refnum">2.1</tag>
+        <tag role="typerefnum">§2.1</tag>
+      </tags>
+      <title><tag close=". ">2.1</tag>Group theory</title>
+      <toctitle><tag close=" ">2.1</tag>Group theory</toctitle>
+      <theorem class="ltx_theorem_definition" inlist="thm theorem:definition" xml:id="Ch2.Thmtheorem1">
+        <tags>
+          <tag>Definition 2.1</tag>
+          <tag role="autoref">2.1</tag>
+          <tag role="refnum">2.1</tag>
+          <tag role="typerefnum">Definition 2.1</tag>
+        </tags>
+        <title class="ltx_runin"><tag><text font="bold">Definition 2.1</text></tag><text font="bold">.</text></title>
+        <para xml:id="Ch2.Thmtheorem1.p1">
+          <p>A group is a set <Math mode="inline" tex="G" text="G" xml:id="Ch2.Thmtheorem1.p1.m1">
+              <XMath>
+                <XMTok font="italic" role="UNKNOWN">G</XMTok>
+              </XMath>
+            </Math> with a binary operation satisfying closure, associativity, identity, and inverses.</p>
+        </para>
+      </theorem>
+      <theorem class="ltx_theorem_theorem" inlist="thm theorem:theorem" xml:id="Ch2.Thmtheorem2">
+        <tags>
+          <tag>Theorem 2.2</tag>
+          <tag role="autoref">Theorem 2.2</tag>
+          <tag role="refnum">2.2</tag>
+          <tag role="typerefnum">Theorem 2.2</tag>
+        </tags>
+        <title class="ltx_runin"><tag><text font="bold">Theorem 2.2</text></tag><text font="bold">.</text></title>
+        <para xml:id="Ch2.Thmtheorem2.p1">
+          <p><text font="italic">Every finite subgroup of the multiplicative group of a field is cyclic.</text></p>
+        </para>
+      </theorem>
+      <proof>
+        <title class="ltx_runin" font="italic">Proof.</title>
+        <para xml:id="Ch2.S1.p1">
+          <p>This is a standard result from algebra.
+∎</p>
+        </para>
+      </proof>
+    </section>
+  </chapter>
+  <chapter inlist="toc" xml:id="Ch3">
+    <tags>
+      <tag>Chapter 3</tag>
+      <tag role="autoref">chapter 3</tag>
+      <tag role="refnum">3</tag>
+      <tag role="typerefnum">Chapter 3</tag>
+    </tags>
+    <title><tag close=" ">Chapter 3</tag>Main Results</title>
+    <toctitle><tag close=" ">3</tag>Main Results</toctitle>
+    <para xml:id="Ch3.p1">
+      <p><!--  %**** thesis.tex Line 250 **** -->Here we present the main contributions of the thesis.</p>
+    </para>
+    <section inlist="toc" xml:id="Ch3.S1">
+      <tags>
+        <tag>3.1</tag>
+        <tag role="autoref">section 3.1</tag>
+        <tag role="refnum">3.1</tag>
+        <tag role="typerefnum">§3.1</tag>
+      </tags>
+      <title><tag close=". ">3.1</tag>A computer simulation</title>
+      <toctitle><tag close=" ">3.1</tag>A computer simulation</toctitle>
+<!--  %The following works with LaTeXml.  I consider the result accessible, but it might not be 100% WCAG compliant. -->      <para xml:id="Ch3.S1.p1">
+        <listing class="ltx_lstlisting" data="ZGVmIGZhY3RvcmlhbChuKToKICAgICIiIkNvbXB1dGUgdGhlIGZhY3RvcmlhbCBvZiBuIHJlY3Vyc2l2ZWx5LiIiIgogICAgaWYgbiA9PSAwOgogICAgICAgIHJldHVybiAxCiAgICBlbHNlOgogICAgICAgIHJldHVybiBuICogZmFjdG9yaWFsKG4gLSAxKQoKcHJpbnQoZiI1ISA9IHtmYWN0b3JpYWwoNSl9Iik=" dataencoding="base64" datamimetype="text/plain">
+          <listingline xml:id="lstnumberx1"><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">def</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">factorial</text><text font="typewriter" fontsize="90%">(</text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">n</text><text font="typewriter" fontsize="90%">):</text></listingline>
+          <listingline xml:id="lstnumberx2"><text class="ltx_lst_space" font="typewriter" fontsize="90%">    </text><text font="typewriter" fontsize="90%">"""</text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">Compute</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">the</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">factorial</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">of</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">n</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">recursively</text><text font="typewriter" fontsize="90%">."""</text></listingline>
+          <listingline xml:id="lstnumberx3"><text class="ltx_lst_space" font="typewriter" fontsize="90%">    </text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">if</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">n</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text font="typewriter" fontsize="90%">==</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text font="typewriter" fontsize="90%">0:</text></listingline>
+          <listingline xml:id="lstnumberx4"><text class="ltx_lst_space" font="typewriter" fontsize="90%">        </text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">return</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text font="typewriter" fontsize="90%">1</text></listingline>
+          <listingline xml:id="lstnumberx5"><text class="ltx_lst_space" font="typewriter" fontsize="90%">    </text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">else</text><text font="typewriter" fontsize="90%">:</text></listingline>
+          <listingline xml:id="lstnumberx6"><text class="ltx_lst_space" font="typewriter" fontsize="90%">        </text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">return</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">n</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text font="typewriter" fontsize="90%">*</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">factorial</text><text font="typewriter" fontsize="90%">(</text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">n</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text font="typewriter" fontsize="90%">-</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text font="typewriter" fontsize="90%">1)</text></listingline>
+          <listingline xml:id="lstnumberx7"/>
+          <listingline xml:id="lstnumberx8"><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">print</text><text font="typewriter" fontsize="90%">(</text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">f</text><text font="typewriter" fontsize="90%">"5!</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text font="typewriter" fontsize="90%">=</text><text class="ltx_lst_space" font="typewriter" fontsize="90%"> </text><text font="typewriter" fontsize="90%">{</text><text class="ltx_lst_identifier" font="typewriter" fontsize="90%">factorial</text><text font="typewriter" fontsize="90%">(5)}")</text></listingline>
+        </listing>
+      </para>
+    </section>
+    <section inlist="toc" xml:id="Ch3.S2">
+      <tags>
+        <tag>3.2</tag>
+        <tag role="autoref">section 3.2</tag>
+        <tag role="refnum">3.2</tag>
+        <tag role="typerefnum">§3.2</tag>
+      </tags>
+      <title><tag close=". ">3.2</tag>Second main result</title>
+      <toctitle><tag close=" ">3.2</tag>Second main result</toctitle>
+      <para xml:id="Ch3.S2.p1">
+        <p>Another significant theorem.</p>
+      </para>
+    </section>
+  </chapter>
+  <chapter inlist="toc" xml:id="Ch4">
+    <tags>
+      <tag>Chapter 4</tag>
+      <tag role="autoref">chapter 4</tag>
+      <tag role="refnum">4</tag>
+      <tag role="typerefnum">Chapter 4</tag>
+    </tags>
+    <title><tag close=" ">Chapter 4</tag>Vitae</title>
+    <toctitle><tag close=" ">4</tag>Vitae</toctitle>
+    <para xml:id="Ch4.p1">
+      <p><!--  %**** thesis.tex Line 275 **** -->For UIC this can be a full CV or a short version (e.g. half a page) with previoius degrees, work experience and publications.</p>
+    </para>
+  </chapter>
+  <appendix inlist="toc" xml:id="A1">
+    <tags>
+      <tag>Appendix A</tag>
+      <tag role="autoref">Appendix A</tag>
+      <tag role="refnum">A</tag>
+      <tag role="typerefnum">Appendix A</tag>
+    </tags>
+    <title><tag close=" ">Appendix A</tag>Technical Lemmas</title>
+    <toctitle><tag close=" ">A</tag>Technical Lemmas</toctitle>
+    <para xml:id="A1.p1">
+      <p>Here we collect some supporting lemmas.</p>
+    </para>
+  </appendix>
+  <bibliography xml:id="bib">
+    <title>Bibliography</title>
+    <biblist>
+      <bibitem key="Hartshorne" xml:id="bib.bib1">
+        <tags>
+          <tag>[1]</tag>
+          <tag role="autoref">1</tag>
+          <tag role="refnum">1</tag>
+        </tags>
+        <bibblock>
+R. Hartshorne, <emph font="italic">Algebraic Geometry</emph>, Springer-Verlag, New York, 1977.
+</bibblock>
+      </bibitem>
+      <bibitem key="Mumford" xml:id="bib.bib2">
+        <tags>
+          <tag>[2]</tag>
+          <tag role="autoref">2</tag>
+          <tag role="refnum">2</tag>
+        </tags>
+        <bibblock>
+D. Mumford, <emph font="italic">Abelian Varieties</emph>, Oxford University Press, 1970.
+</bibblock>
+      </bibitem>
+      <bibitem key="DraismaEtAl" xml:id="bib.bib3">
+        <tags>
+          <tag>[3]</tag>
+          <tag role="autoref">3</tag>
+          <tag role="refnum">3</tag>
+        </tags>
+        <bibblock>
+J. Draisma, E. Horobet, G. Ottaviani, B. Sturmfels, and R. R. Thomas,
+“The Euclidean distance degree of an algebraic variety,”
+<emph font="italic">arXiv:1309.0049</emph> (2013).
+Available at: <ref class="ltx_href" href="https://arxiv.org/abs/1309.0049">https://arxiv.org/abs/1309.0049</ref>
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+</document>
