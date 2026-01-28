@@ -169,7 +169,7 @@ print(f"5! = {factorial(5)}")
 
 ### \mathcal vs \mathscr
 
-There is not support for \mathscr and \mathcal so it is recommended you only use \mathscr [https://github.com/brucemiller/LaTeXML/pull/2244](https://github.com/brucemiller/LaTeXML/pull/2244)
+There is not support to differentiate between \mathscr and \mathcal so it is recommended you only use \mathscr [https://github.com/brucemiller/LaTeXML/pull/2244](https://github.com/brucemiller/LaTeXML/pull/2244)
 
 ### Author field in epub
 
