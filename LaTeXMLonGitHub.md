@@ -40,7 +40,7 @@ and below that main -> /docs
 
 After a moment refresh that page and you will be given the link to your website on the top where you can see your document.
 
-Note: The free tier of GitHub does not allow pages for private repositories.
+Note: The free tier of GitHub does not allow pages for private repositories.  So you either make your repository public, in which case other people can see your work in progress, or you need to pay for GitHub.  If you are in MSCS at UIC we can give you an mscs github account where you can have private repositories with pages.
 
 ## Using Overleaf
 
