@@ -1,6 +1,8 @@
 
 
-# (This is New and needs testing) Using this template directly with GitHub and/or Overleaf
+# (This was created Jan 27; it might be that the workflow is revised in the near future so be warned)
+
+# Using this template directly with GitHub and/or Overleaf
 
 These instructions may be advanced for some, but may also be easier than installing LaTeXML on your own computer.
 
