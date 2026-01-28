@@ -29,7 +29,7 @@ If you are familiar with git you can now use this repository with whatever tools
 
 This seems to be working well.  The only issue is that it can be rather slow to run which is annoying when trying to fix bugs.
 
-Go to your template repository and selection ``Actions".  You should see "Run LaTeXML" on the left hand side.   Click on this and then select "Run Workflow" which takes around 2 minutes (possibly longer when the file gets longer). If there are errors you can find them through the links on this page.
+Go to your github repository that holds your copy of this template and select ``Actions".  You should see "Run LaTeXML" on the left hand side.   Click on this and then select "Run Workflow" which takes around 2 minutes (possibly longer if your file gets longer). If there are errors you can find them through the links on this page, else you will see here when it is completed.
 
 If there are no errors you get the relevant documents inside the /docs folder on your github repository.  It will also create an epub verstion called thesis.epub.
 
