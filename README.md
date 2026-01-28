@@ -48,7 +48,7 @@ Testing has happened with TeXLive 2025 and LaTeXml 0.8.8 all on MacOS.   The epu
 
 ## GitHub and Overleaf Integration
 
-You can certainly use overleaf to edit, but it is not possible to run LaTeXML directly within overleaf.
+You can certainly use overleaf to edit your LaTeX files, but it is not possible to run LaTeXML directly within overleaf.
 
 With a little bit of effort it is possible to run LaTeXML directly within Github so you do not have to install this software on your own machine.   Also if you have a premium overleaf subscription you can connect overleaf to github.  See the [Instructions on GitHub and Overleaf Integration](LaTeXMLonGitHub.md) for details.
 
