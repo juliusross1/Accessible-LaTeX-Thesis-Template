@@ -44,4 +44,4 @@ Note: The free tier of GitHub does not allow pages for private repositories.  So
 
 ## Using Overleaf
 
-If you are a premium subscriber to overleaf then you can connect overleaf to your github repository.  See [Overleaf's GitHub Integration documentation](https://docs.overleaf.com/integrations-and-add-ons/git-integration-and-github-synchronization/git-integration) for details.
+If you are a premium subscriber to Overleaf then you can connect overleaf to your github repository.  See [Overleaf's GitHub Integration documentation](https://docs.overleaf.com/integrations-and-add-ons/git-integration-and-github-synchronization/git-integration) for details.
