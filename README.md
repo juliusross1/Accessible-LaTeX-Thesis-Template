@@ -52,7 +52,7 @@ You can certainly use overleaf to edit your LaTeX files, but it is not possible 
 
 With a little bit of effort it is possible to run LaTeXML directly within Github so you do not have to install this software on your own machine.   Also if you have a premium overleaf subscription you can connect overleaf to github.  See the [Instructions on GitHub and Overleaf Integration](LaTeXMLonGitHub.md) for details.
 
-For instance this [repository has the template in html format](https://juliusross1.github.io/Accessible-LaTeX-Thesis-Template/).  For a thesis you probably only want to use this to make sure things are working as you expect, but if you intend to use this html output you might want to improve the look by changing style.css.
+For instance this [repository has the template in html format](https://juliusross1.github.io/Accessible-LaTeX-Thesis-Template/).  For a thesis you probably only want to use this to make sure things are working as you expect, but if you intend to use this html output you might want to improve the look by creating a style.css that suits your needs.
 
 ## Installing LaTeXML
 
