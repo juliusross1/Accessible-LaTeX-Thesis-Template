@@ -23,7 +23,7 @@ git push -u origin main
 
 Note: If you are using a Personal Access Token (PAT) to use github then you must make sure that "workflows" is enabled in your PAT.
 
-If you are familiar with git you can now use this repository with whatever tools you normally use.  Or you may want to user overleaf (see below).
+If you are familiar with git you can now use this repository with whatever tools you normally use (e.g. VSCode).  Or you may want to use Overleaf (see below).
 
 ## Running LaTeXML within GitHub
 
