@@ -177,9 +177,13 @@ print(f"5! = {factorial(5)}")
 
 ## Things that do not work (or could work better) with LaTeXML
 
+### Footnoes
+
+I understand that footnotes do not work at all in epub (but do work in html).  It is recommended to avoid them completely.
+
 ### \mathcal vs \mathscr
 
-There is not support to differentiate between \mathscr and \mathcal so it is recommended you only use \mathscr [https://github.com/brucemiller/LaTeXML/pull/2244](https://github.com/brucemiller/LaTeXML/pull/2244)
+There is not support to differentiate between \mathscr and \mathcal. This is being worked on [https://github.com/brucemiller/LaTeXML/pull/2244](https://github.com/brucemiller/LaTeXML/pull/2244).   I recommend that you only use one of these throughout.       If you do have to use both I strongly recommend not using both \mathscr{A} and \mathcal{A} in the same document (it seems that the consensus is that these two are stylistic variants of the same letter)
 
 ### Author field in epub
 
@@ -236,7 +240,7 @@ It might be that you want this as a "figure" at which point the software will pl
 
 ### TikZ and xypic mathematical formulae
 
-It is most accessible if you write your equations using usual LaTeX commands.  If you have a complicated or non-standard equation for which you need to use tikz (this is likely not to happen often) you might prefer to include it as follows so that equation numbering works.
+It is most accessible if you write your equations using usual LaTeX commands.  If you have a complicated or non-standard equation for which you need to use tikz (this is likely not to happen often) you might prefer to include it as follows so that equation numbering works (but this seems pretty non-standard so I recommend doing this are infrequently as possible and expect things to break)
 
 ```
 \begin{equation}
