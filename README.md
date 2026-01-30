@@ -183,7 +183,7 @@ print(f"5! = {factorial(5)}")
 
 ## Things that do not work (or could work better) with LaTeXML
 
-### Footnoes
+### Footnotes
 
 I understand that footnotes do not work at all in epub (but do work in html).  It is recommended to avoid them completely.
 
