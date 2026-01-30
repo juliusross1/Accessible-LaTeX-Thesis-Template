@@ -89,7 +89,7 @@ The title page works with both the pdf and the epub.  LaTeXml reports that "Fron
 
 ### Links
 
-The hyperref package works to give internal an external links.  For instance
+The hyperref package works to give internal and external links.  For instance
 
 ```
 %Accessible/WCAG compliant
