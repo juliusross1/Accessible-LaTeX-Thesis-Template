@@ -191,7 +191,7 @@ I understand that footnotes do not work at all in epub (but do work in html).  I
 
 There is not support to differentiate between \mathscr and \mathcal. This is being worked on [https://github.com/brucemiller/LaTeXML/pull/2244](https://github.com/brucemiller/LaTeXML/pull/2244).   I recommend that you only use one of these throughout.  
 
-In more detail: I am pretty sure that the way things are setup something like \mathcal{A} is a variant of \mathscr{A} with a different visual appearance, but that these two are meant to have the same *meaning*.  I particular you should avoid using these in a way that the difference changes the meaning.  So, for example, you have something like $\mathcal{A} = \mathscr{A} + 1$ then you have done something wrong!
+In more detail: \mathcal{A} is considered a variant of \mathscr{A} with a different visual appearance but the same *meaning*.  I particular you should avoid using these in a way that the difference changes the meaning.  So, for example, you have are writing something like $\mathcal{A} = \mathscr{A} + 1$ then you have done something wrong and should pick different notation!
 
 ### Author field in epub
 
