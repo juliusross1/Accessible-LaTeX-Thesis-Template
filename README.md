@@ -105,6 +105,12 @@ The link to the University of Illinois Chicago is \href{https://www.uic.edu}{her
 \url{https://www.uic.edu}
 ```
 
+### Commutative diagrams
+
+The amscd package is supported, and I am not aware of any issues with it when you use the amsbook class as in this template.   I note that amscd does not allow for diagonal arrows 
+
+I am not aware of a way to make complicated commutative diagrams truely accessible; making them in tikz-cd and using alt-text as described below will be compliant, but likely not very accessible unless the diagram is simple.   Consider if you can use amscd instead.
+
 ### Images
 
 You can include JPG, JPEG or PNG images.   At present, including SVG or PDF does not allow for alternative text so would not be accessible.  See below about TikZ/xypic.
